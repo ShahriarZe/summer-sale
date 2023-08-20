@@ -58,6 +58,8 @@
             <div class="">
                 <h1 class="text-3xl font-semibold mb-5">Sportswear</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
+
+                    <!-- CARD 1 -->
                     <div onclick="onClickCard1()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod4.png" alt="Shoes" class="" />
@@ -70,6 +72,8 @@
                             <p class="text-xl"><span id="capPrice">49.00</span> TK</p>
                         </div>
                     </div>
+
+                    <!-- CARD 2 -->
                     <div onclick="onClickCard2()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod5.png" alt="Shoes" class="" />
@@ -82,6 +86,8 @@
                             <p class="text-xl"><span id="jerseyPrice">69.00</span> TK</p>
                         </div>
                     </div>
+
+                    <!-- CARD 3 -->
                     <div onclick="onClickCard3()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod6.png" alt="Shoes" class="" />
@@ -98,6 +104,8 @@
                 <div>
                     <h1 class="text-3xl font-semibold mb-5 mt-5">Furniture</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                        <!-- CARD 4 -->
                         <div onclick="onClickCard4()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod7.png" alt="Shoes" class="" />
@@ -110,6 +118,8 @@
                                 <p class="text-xl"><span id="chairPrice">185.00</span> TK</p>
                             </div>
                         </div>
+
+                        <!-- CARD 5 -->
                         <div onclick="onClickCard5()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod8.png" alt="Shoes" class="" />
@@ -122,6 +132,8 @@
                                 <p class="text-xl"><span id="childrenPrice">299.00</span> TK</p>
                             </div>
                         </div>
+
+                        <!-- CARD 6 -->
                         <div onclick="onClickCard6()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod9.png" alt="Shoes" class="" />
@@ -138,9 +150,11 @@
                 </div>
             </div>
 
+
+            <!--ADD TO CART Section  -->
             <div class="flex-1">
                 <div class="mb-2 shadow-xl rounded-xl p-4">
-                    <h1 class="text-2xl font-semibold">Have coupon?</h1>
+                    <h1 class="text-2xl font-semibold">Have Coupon?</h1>
                     <input id="sellInput" type="text" placeholder="Type here"
                         class="input input-bordered input-secondary w-[200] max-w-xs" />
                     <button onclick="applyButton()" id="apply" class="btn btn-secondary text-xl text-white "
@@ -150,10 +164,12 @@
                     <div class="text-2xl font-semibold mt-5" id="newElementDiv">
 
                     </div>
-                    <h1 class="text-2xl font-semibold mt-5 border-t-2">Total Price : <span id="itemTotal">000</span> TK
+                    <h1 class="text-2xl font-semibold mt-5 border-t-2">Total Price : <span id="itemTotal">00.00</span>
+                        TK
                     </h1>
-                    <h1 class="text-2xl font-semibold ">Discount : <span id="discountValue">000</span> TK</h1>
-                    <h1 class="text-2xl font-semibold border-b-2">Total : <span id="allTotal"> 000</span> TK</h1>
+                    <h1 class="text-2xl font-semibold ">Discount : <span id="discountValue">00.00</span> TK</h1>
+                    <h1 class="text-2xl font-semibold border-b-2">Total : <span id="allTotal"> 00.00</span> TK</h1>
+
                     <!-- MODAL -->
                     <button id="modalBtn" class="btn btn-secondary w-full mt-5 text-white text-2xl" disabled
                         onclick="my_modal_1.showModal()">Make Purchase</button>
@@ -167,7 +183,7 @@
                             <div class="modal-action flex justify-center">
                                 <!-- MODAL BUTTON -->
                                 <button onclick="modalClose()" id="closeBtn"
-                                    class="btn btn-secondary text-2xl text-white">Close</button>
+                                    class="btn btn-secondary text-2xl text-white">Go Home</button>
                             </div>
                         </form>
                     </dialog>
