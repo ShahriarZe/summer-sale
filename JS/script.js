@@ -220,11 +220,11 @@ function modalClose() {
     const newDiv = document.getElementById('newElementDiv');
     newDiv.innerHTML = '';
     const itemTotal = document.getElementById('itemTotal');
-    itemTotal.innerText = '000';
+    itemTotal.innerText = '00.00';
     const discountValue = document.getElementById('discountValue');
-    discountValue.innerText = '000';
+    discountValue.innerText = '00.00';
     const allTotal = document.getElementById('allTotal');
-    allTotal.innerText = '000';
+    allTotal.innerText = '00.00';
 
     const modal = document.getElementById('modalBtn');
     modal.setAttribute('disabled', true);
