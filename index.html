@@ -141,9 +141,10 @@
             <div class="flex-1">
                 <div class="mb-2 shadow-xl rounded-xl p-4">
                     <h1 class="text-2xl font-semibold">Have coupon?</h1>
-                    <input type="text" placeholder="Type here"
+                    <input id="sellInput" type="text" placeholder="Type here"
                         class="input input-bordered input-secondary w-[200] max-w-xs" />
-                    <button id="apply" class="btn btn-secondary text-xl text-white " disabled>Apply</button>
+                    <button onclick="applyButton()" id="apply" class="btn btn-secondary text-xl text-white "
+                        disabled>Apply</button>
                 </div>
                 <div class="shadow-xl mt-4 p-4 rounded-xl">
                     <div class="text-2xl font-semibold mt-5" id="newElementDiv">
@@ -151,8 +152,8 @@
                     </div>
                     <h1 class="text-2xl font-semibold mt-5 border-t-2">Total Price : <span id="itemTotal">000</span> TK
                     </h1>
-                    <h1 class="text-2xl font-semibold">Discount : 000 TK</h1>
-                    <h1 class="text-2xl font-semibold border-b-2">Total : 000 TK</h1>
+                    <h1 class="text-2xl font-semibold ">Discount : <span id="discountValue">000</span> TK</h1>
+                    <h1 class="text-2xl font-semibold border-b-2">Total : <span id="allTotal"> 000</span> TK</h1>
                     <!-- MODAL -->
                     <button id="modalBtn" class="btn btn-secondary w-full mt-5 text-white text-2xl" disabled
                         onclick="my_modal_1.showModal()">Make Purchase</button>
@@ -165,7 +166,8 @@
                             </div>
                             <div class="modal-action flex justify-center">
                                 <!-- MODAL BUTTON -->
-                                <button class="btn btn-secondary text-2xl text-white">Close</button>
+                                <button onclick="modalClose()" id="closeBtn"
+                                    class="btn btn-secondary text-2xl text-white">Close</button>
                             </div>
                         </form>
                     </dialog>

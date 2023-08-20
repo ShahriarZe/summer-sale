@@ -187,3 +187,48 @@ function onClickCard6() {
         applyBtn.setAttribute('disabled', true)
     }
 }
+
+
+// Apply Button Function
+function applyButton() {
+    const TotalValue = document.getElementById('itemTotal');
+    const totalValueString = TotalValue.innerText;
+    const total = parseFloat(totalValueString);
+
+
+    const inputValue = document.getElementById('sellInput');
+    const input = inputValue.value;
+    inputValue.value = '';
+
+    if (input === 'SELL200') {
+        const discountTotal = ((total * 20) / 100);
+        setItemTotal('discountValue', discountTotal);
+        const totalAfterDiscount = total - discountTotal;
+        setItemTotal('allTotal', totalAfterDiscount)
+    }
+    else {
+        alert('Give a Valid Input ');
+    }
+}
+
+
+
+
+// Modal Close Button Function
+function modalClose() {
+    const closeBtn = document.getElementById('closeBtn');
+    const newDiv = document.getElementById('newElementDiv');
+    newDiv.innerHTML = '';
+    const itemTotal = document.getElementById('itemTotal');
+    itemTotal.innerText = '000';
+    const discountValue = document.getElementById('discountValue');
+    discountValue.innerText = '000';
+    const allTotal = document.getElementById('allTotal');
+    allTotal.innerText = '000';
+
+    const modal = document.getElementById('modalBtn');
+    modal.setAttribute('disabled', true);
+    const applyBtn = document.getElementById('apply');
+    applyBtn.setAttribute('disabled', true);
+
+}
