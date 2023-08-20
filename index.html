@@ -13,6 +13,9 @@
         body {
             font-family: 'Work Sans', sans-serif;
         }
+        .card{
+            cursor: pointer;
+        }
     </style>
 
     <!-- Icons -->
@@ -54,7 +57,7 @@
             <div class="">
                 <h1 class="text-3xl font-semibold mb-5">Sportswear</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
-                    <div class="card  bg-base-200 rounded-xl p-5">
+                    <div onclick="onClickCard1()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod4.png" alt="Shoes" class="" />
                         </figure>
@@ -62,11 +65,11 @@
                             <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                            <h2 class="card-title">Sports Black Cap!</h2>
-                            <p class="text-xl">50.00 TK</p>
+                            <h2 class="card-title"><span id="BlackCap">Sports Black Cap</span></h2>
+                            <p class="text-xl"><span id="capPrice">49.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-200 rounded-xl p-5">
+                    <div onclick="onClickCard2()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod5.png" alt="Shoes" class="" />
                         </figure>
@@ -74,11 +77,11 @@
                             <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                     class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                            <h2 class="card-title">Full Jersey Set!</h2>
-                            <p class="text-xl">70.00 TK</p>
+                            <h2 class="card-title"><span id="jerseySet">Full Jersey Set</span></h2>
+                            <p class="text-xl"><span id="jerseyPrice">69.00</span> TK</p>
                         </div>
                     </div>
-                    <div class="card  bg-base-200 rounded-xl p-5">
+                    <div onclick="onClickCard3()" class="card  bg-base-200 rounded-xl p-5">
                         <figure class="px-10 pt-10 bg-gray-200">
                             <img src="./images/prod6.png" alt="Shoes" class="" />
                         </figure>
@@ -86,15 +89,15 @@
                             <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                     class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                            <h2 class="card-title">Sports Cates!</h2>
-                            <p class="text-xl">160.00 TK</p>
+                            <h2 class="card-title"><span id="sportsCades">Sports Cades</span></h2>
+                            <p class="text-xl"><span id="cadesPrice">159.00</span> TK</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h1 class="text-3xl font-semibold mb-5 mt-5">Furniture</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                        <div class="card  bg-base-200 rounded-xl p-5">
+                        <div onclick="onClickCard4()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod7.png" alt="Shoes" class="" />
                             </figure>
@@ -102,11 +105,11 @@
                                 <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                                <h2 class="card-title">Single Relax Chair!</h2>
-                                <p class="text-xl">185.00 TK</p>
+                                <h2 class="card-title"><span id="relaxChair">Single Relax Chair</span></h2>
+                                <p class="text-xl"><span id="chairPrice">185.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card  bg-base-200 rounded-xl p-5">
+                        <div onclick="onClickCard5()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod8.png" alt="Shoes" class="" />
                             </figure>
@@ -114,11 +117,11 @@
                                 <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-                                <h2 class="card-title">Children play!</h2>
-                                <p class="text-xl">290.00 TK</p>
+                                <h2 class="card-title"><span id="childrenPlay">Children play</span></h2>
+                                <p class="text-xl"><span id="childrenPrice">299.00</span> TK</p>
                             </div>
                         </div>
-                        <div class="card  bg-base-200 rounded-xl p-5">
+                        <div onclick="onClickCard6()" class="card  bg-base-200 rounded-xl p-5">
                             <figure class="px-10 pt-10 bg-gray-200">
                                 <img src="./images/prod9.png" alt="Shoes" class="" />
                             </figure>
@@ -126,8 +129,8 @@
                                 <p class="text-[gold] text-2xl"><i class="fa-solid fa-star"></i><i
                                         class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                         class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
-                                <h2 class="card-title">Flexible Sofa!</h2>
-                                <p class="text-xl">340.00 TK</p>
+                                <h2 class="card-title"><span id="flexibleSofa">Flexible Sofa</span></h2>
+                                <p class="text-xl"><span id="sofaPrice">339.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -138,12 +141,16 @@
                 <h1 class="text-2xl font-semibold">Have coupon?</h1>
                 <input type="text" placeholder="Type here"
                     class="input input-bordered input-secondary w-[200] max-w-xs" />
-                <button class="btn btn-secondary text-xl text-white ">Apply</button>
-                <h1 class="text-2xl font-semibold mt-5 border-t-2">Total Price : 000 TK</h1>
+                <button class="btn btn-secondary text-xl text-white " disabled>Apply</button>
+                <div class="text-2xl font-semibold mt-5" id="newElementDiv">
+
+                </div>
+                <h1 class="text-2xl font-semibold mt-5 border-t-2">Total Price : <span id="itemTotal">000</span> TK</h1>
                 <h1 class="text-2xl font-semibold">Discount : 000 TK</h1>
                 <h1 class="text-2xl font-semibold border-b-2">Total : 000 TK</h1>
                 <!-- MODAL -->
-                <button class="btn btn-secondary w-full mt-5 text-white text-2xl" onclick="my_modal_1.showModal()">open
+                <button class="btn btn-secondary w-full mt-5 text-white text-2xl" disabled
+                    onclick="my_modal_1.showModal()">open
                     modal</button>
                 <dialog id="my_modal_1" class="modal ">
                     <form method="dialog" class="modal-box ">
