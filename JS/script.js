@@ -1,10 +1,14 @@
 // ReUsable Function
+
+// Get Name Function
 function getItemName(nameId) {
     const getName = document.getElementById(nameId);
     const name = getName.innerText;
     return name;
 }
 
+
+// Get Price Id Function
 function getItemPrice(priceId) {
     const priceValue = document.getElementById(priceId);
     const priceValueString = priceValue.innerText;
@@ -12,6 +16,8 @@ function getItemPrice(priceId) {
     return itemPrice;
 }
 
+
+// Get Cart Area Value Function
 function getAreaValue(areaId) {
     const areaValue = document.getElementById(areaId);
     const areaValueString = areaValue.innerText;
@@ -19,11 +25,15 @@ function getAreaValue(areaId) {
     return area;
 }
 
+
+// Set Cart Area Value Function
 function setItemTotal(areaValueId, totalPrice) {
     const itemTotalValue = document.getElementById(areaValueId);
     itemTotalValue.innerText = totalPrice;
 }
 
+
+// Set Item in Cart Function
 function addtoCart(itemName) {
     const newElementEntry = document.getElementById('newElementDiv');
     const count = newElementEntry.childElementCount
@@ -41,6 +51,20 @@ function onClickCard1() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
 
 // Full Jersey Set
@@ -51,6 +75,20 @@ function onClickCard2() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
 
 // Sports Cades
@@ -61,6 +99,20 @@ function onClickCard3() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
 
 // Single Relax Chair
@@ -71,6 +123,20 @@ function onClickCard4() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
 
 // Children Play
@@ -81,6 +147,20 @@ function onClickCard5() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
 
 // Flexible Sofa
@@ -91,4 +171,19 @@ function onClickCard6() {
     const total = itemTotal + price;
     const itemTotalArea = setItemTotal('itemTotal', total);
     addtoCart(cardName);
+    const modal = document.getElementById('modalBtn');
+    if (total > 0) {
+        modal.removeAttribute('disabled');
+    }
+    else {
+        modal.setAttribute('disabled', true)
+    }
+
+    const applyBtn = document.getElementById('apply');
+    if (total >= 200) {
+        applyBtn.removeAttribute('disabled');
+    }
+    else {
+        applyBtn.setAttribute('disabled', true)
+    }
 }
